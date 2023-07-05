@@ -1,0 +1,19 @@
+$primary-color:#272727;
+$accent-color:#ff652f;
+$text-color:#ffff;
+$font-weight:(
+    "regular":400,
+    "medium":500,
+    "semibold":700,
+    "bold":900,
+);
+
+body{
+    background: $primary-color;
+    color:$text-color;
+    font-weight: map-get($font-weight,bold);
+}
+
+.main{
+    
+}
