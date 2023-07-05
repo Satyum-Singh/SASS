@@ -5,6 +5,20 @@
     @return map-get($font-weights,$weight-name)
 };
 
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@mixin theme($light-theme:true){
+    @if $light-theme{
+        background: lighten($primary-color,100%);
+        color:darken($text-color,100%)
+    }
+}
+
 body{
     background: $primary-color;
     color:$text-color;
@@ -13,6 +27,7 @@ body{
 .main{
     width:80%;
     margin:0 auto;
+    @include flexCenter();
 
     #{&}__paragraph{
         font-weight:weight(regular) ;
@@ -22,4 +37,8 @@ body{
         
     }
         
+}
+
+.light{
+    @include theme($light-theme:true);
 }

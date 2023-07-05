@@ -12,10 +12,18 @@ body {
 .main {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main .main__paragraph {
   font-weight: 400;
 }
 .main .main__paragraph:hover {
   color: pink;
+}
+
+.light {
+  background: white;
+  color: black;
 }/*# sourceMappingURL=main.css.map */
