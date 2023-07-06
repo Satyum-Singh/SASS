@@ -43,6 +43,14 @@ body{
         
     }
 
+    #{&}__paragraph2 {
+        @extend .main__paragraph;
+        &:hover {
+            color: $accent-color;
+        }
+    
+    }
+
     @include mobile{
         flex-direction: column;
     }
